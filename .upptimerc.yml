@@ -1,26 +1,25 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: NomadInEthiopia
+repo: GOAT-Status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: ShopEasy
+    url: https://shopeasynx.com
+  - name: ShopEasy API
+    url: https://api.shopeasynx.com/health
+  - name: GOAT Dashboard
+    url: http://178.105.185.86
+  - name: NomadInEthiopia
+    url: https://www.nomadinethiopia.com
+  - name: NomadX Digital
+    url: https://www.nomadxdigital.com
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
+  # GitHub Pages without custom domain
+  baseUrl: /GOAT-Status
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  name: NomadX Status
+  introTitle: "**NomadX Status** — uptime monitor for GOAT and NomadX services."
+  introMessage: Status page powered by [Upptime](https://github.com/upptime/upptime) on GitHub Actions. Live data from [this repository](https://github.com/NomadInEthiopia/GOAT-Status).
   navbar:
     - title: Status
       href: /
