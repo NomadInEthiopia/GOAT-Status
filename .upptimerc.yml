@@ -13,18 +13,30 @@ sites:
   - name: NomadX Digital
     url: https://www.nomadxdigital.com
 
+# Secret allowlist (GitHub Actions → Secrets)
+secrets:
+  - GH_PAT
+  - NOTIFICATION_CUSTOM_WEBHOOK
+  - NOTIFICATION_CUSTOM_WEBHOOK_URL
+  - NOTIFICATION_TELEGRAM
+  - NOTIFICATION_TELEGRAM_BOT_KEY
+  - NOTIFICATION_TELEGRAM_CHAT_ID
+
 status-website:
   # GitHub Pages without custom domain
   baseUrl: /GOAT-Status
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: NomadX Status
   introTitle: "**NomadX Status** — uptime monitor for GOAT and NomadX services."
-  introMessage: Status page powered by [Upptime](https://github.com/upptime/upptime) on GitHub Actions. Live data from [this repository](https://github.com/NomadInEthiopia/GOAT-Status).
+  introMessage: "Live status for ShopEasy, GOAT Dashboard and NomadX sites. Powered by [Upptime](https://github.com/upptime/upptime) · source: [GOAT-Status](https://github.com/NomadInEthiopia/GOAT-Status)."
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+    - title: GOAT
+      href: http://178.105.185.86
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Notifications via GitHub Secrets (NOTIFICATION_*)
+# Custom webhook → GOAT /webhooks/uptime-robot (+ Telegram nativo)
+# See https://upptime.js.org/docs/notifications
